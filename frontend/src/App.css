@@ -1,0 +1,309 @@
+
+@font-face {
+  font-family: tondu;
+  src: url(./fonts/Tondu_Beta.otf);
+}
+
+@font-face {
+  font-family: ele;
+  src: url(./fonts/elephant.otf);
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+
+.main-container {
+    margin: 3em;
+    text-align: justify;
+}
+
+.section-header {
+    margin: 0.6m auto;
+    margin-bottom: 0.4em;
+    font-weight: 900;
+    color: #fc484c;
+    font-style: italic;
+    text-align: center;
+}
+
+.title {
+    margin-right: 1em;
+    font-family: 'ele', 'tondu', Helvetica;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: .8px;
+    text-align: left;
+    font-size: 2em;
+    color: #fc484c;
+}
+
+.nav-bar {
+    border-bottom: 3px solid #fc484c;
+    height: 50px;
+}
+
+ul.Header_links {
+    list-style-type: none;
+    margin: 0px;
+    font-size: 1em;
+    font-weight: bold;
+
+}
+
+
+.newsletter {
+    margin: 1em 0 1em 0;
+    background-color: #f0ead6;
+    height: 250px;
+    text-align: center;
+}
+
+.email-input {
+    margin: 15px auto;
+    border: 1px dashed #fc484c;
+    padding: 8px 10px;
+}
+
+.this-week {
+    display: table;
+    width: 100%
+}
+
+.ep-description {
+    display: table-cell;
+    vertical-align: top;
+    font-style: italic;
+    padding: 0 0 0 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.row {
+    display: table-row;
+    margin: 1em;
+}
+
+.episode {
+    width: 50%; 
+    display: table-cell;
+}
+
+form input[type=submit] {
+    background-color: #468fff;
+    color: #fff;
+    border: 0;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+form {
+    padding: 30px;
+    margin: 5em 0;
+    background-color: hsla(0,0%,100%,.6);
+}
+
+label {
+    font-size: 16px;
+    font-family: monospace;
+    text-align: center;
+}
+
+li.Header_link {
+    float: left;
+    text-decoration: none;
+}
+
+
+li.Header_link a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+
+.container {
+    padding: 1em 0;
+    border: 1px solid #fc484c;
+}
+
+.article-container {
+    letter-spacing: 0;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    max-height: 280px;
+    box-sizing: border-box;
+    color: rgba(0,0,0,.54);
+    display: table;
+    width: 50%;
+    margin: 1em 1em;
+    border-left: 20px solid #fc484c;
+    border-radius: 3px;
+}
+
+.img-container {
+    display: table-cell;
+    vertical-align: middle;
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.article-container:link {
+    text-decoration: none;
+}
+
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+.text-container {
+    height: 150px;
+    -webkit-tap-highlight-color: transparent;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 20px;
+    text-decoration: none;
+    background-color: inherit;
+
+}
+
+.art-site {
+    text-transform: lowercase;
+    color: #8899A6;
+    max-height: 1.3em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 1em;
+}
+
+.art-title {
+    font-style: italic;
+    max-height: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1em;
+    margin: 0 0 .15em;
+    padding: .75em;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+
+.description {
+    text-decoration: none;
+    color: black;
+    padding: .75em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+main {
+  width: calc(650px * 8);
+  height: 100vh;
+  position: absolute;
+  overflow-y: hidden;
+  overflow: auto;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+body {
+    background-color: #f0ead6;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  font-family: helvetica;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact {
+    height: 400px;
+    line-height: 200px;
+    text-align: center;
+}
+
+.email {
+    width: 100%;
+    text-align: center;
+}
+
+.more-episodes {
+    margin-top: 3em;
+    background-color: hsla(0,0%,100%,.6);
+    padding: 1.5em;
+    
+}
+
+
+
+.about { 
+    width: 75%;
+    padding: 40px;
+    font-size: 1.5em;
+    font-family: monospace;
+    line-height: 1.3;
+    overflow: auto;
+    margin: auto;
+}
+
